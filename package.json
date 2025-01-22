@@ -4,8 +4,17 @@
   "description": "Welcome, fellow developers, to an exciting journey into the world of real-time chat! In today's digital landscape, real-time communication has become an essential component of many web applications. Whether you're building a social networking platform, a collaborative tool, or simply looking to engage your users more effectively, adding real-time chat can be a game-changer.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "react-scripts": "^5.0.1",
+    "vite": "^6.0.11",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1"
+  }
 }
