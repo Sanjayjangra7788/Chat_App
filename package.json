@@ -1,0 +1,11 @@
+{
+  "name": "chat_app",
+  "version": "1.0.0",
+  "description": "Welcome, fellow developers, to an exciting journey into the world of real-time chat! In today's digital landscape, real-time communication has become an essential component of many web applications. Whether you're building a social networking platform, a collaborative tool, or simply looking to engage your users more effectively, adding real-time chat can be a game-changer.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
