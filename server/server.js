@@ -83,7 +83,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "*",  // Change this for security later
+    origin: "*",  // For development, restrict this for production
     credentials: true,
   },
 });
