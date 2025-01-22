@@ -75,6 +75,7 @@
 
 
 const express = require('express');
+const cors = require('cors');
 const http = require('http');
 const { Server } = require('socket.io');
 
@@ -82,11 +83,17 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "*", // Allows all origins. Change this to a more restrictive URL in production.
+    origin: "*",  // Change this for security later
     credentials: true,
   },
 });
 
+// Sample API Route
+app.get("/api", (req, res) => {
+  res.send("Hello from the backend!");
+});
+
+// Socket.IO connection
 let users = {};
 
 io.on('connection', (socket) => {
@@ -107,7 +114,8 @@ io.on('connection', (socket) => {
   });
 });
 
-server.listen(5000, () => {
-  console.log('Server is running on port 5000');
+const PORT = process.env.PORT || 5000;
+server.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
 
